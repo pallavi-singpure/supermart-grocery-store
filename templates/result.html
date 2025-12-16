@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Prediction Result{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-7 col-md-9">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-success text-white text-center">
+                Prediction Complete
+            </div>
+            <div class="card-body p-5 text-center">
+                <h2 class="card-title mb-4">Predicted {{ title }}</h2>
+
+                <div class="alert alert-success p-4 d-inline-block">
+                    <h1 class="display-3 fw-bold mb-0">
+                        ${{ value }}
+                    </h1>
+                </div>
+
+                <p class="mt-4 text-muted">The model has successfully predicted the estimated {{ title | lower }}.</p>
+
+                <hr>
+
+                <div class="mt-4">
+                    <a href="/sales" class="btn btn-outline-primary me-2">Predict New Sales</a>
+                    <a href="/profit" class="btn btn-outline-primary">Predict New Profit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

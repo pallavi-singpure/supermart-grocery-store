@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<header class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5 text-center">
+        <h1 class="display-5 fw-bold text-success">Welcome to FreshForecast Analytics</h1>
+        <p class="col-md-8 fs-4 mx-auto">Your portal for accurate sales and profit prediction using advanced machine learning models.</p>
+        <a class="btn btn-primary btn-lg mt-3 me-2" href="/sales" role="button">Start Sales Prediction</a>
+        <a class="btn btn-outline-success btn-lg mt-3" href="/profit" role="button">Start Profit Prediction</a>
+    </div>
+</header>
+{% endblock %}
